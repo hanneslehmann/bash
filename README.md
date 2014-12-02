@@ -26,6 +26,6 @@ whatchme.sh file.md 'md-chapters.sh file.md'
 -  Argument 2: (optional) = "show|complete"
 
 Parses a file and returns a chapter numbering in respect to the count of "#" which indicates a section in Markdown.
-
-option = show, shows the "#"
+  
+option = show, shows the "#"  
 option = complete, shows first the original chapter titel and then the one with added numbering (for easy string replacement)
