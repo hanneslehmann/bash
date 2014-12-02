@@ -4,7 +4,7 @@
 # Date:		02/12/2014	
 # Usage:
 # Argument 1 = filename.md
-# Argument 2 (optional) = "show"
+# Argument 2 (optional) = "show|complete"
 
 REGEX_HEADING="^#"
 
@@ -59,7 +59,12 @@ cat $1 | while read LINE ; do
 		then
 			output="$lvl $output$title"
 		else
-			output="$output$title"
+			if [ "$2" == "complete" ] 
+			then
+				output="$LINE---$lvl $output$title"
+			else
+				output="$output$title"
+			fi
 		fi
 
 		echo $output
