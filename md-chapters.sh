@@ -1,6 +1,7 @@
 #!/bin/bash
 # Author: 	Hannes Lehmann
 # Description: 	small script to count the chapters on markdown files and helping to add them
+# Email:	hannes.lehmann@nterra.com
 # Date:		02/12/2014	
 # Usage:
 # Argument 1 = filename.md
